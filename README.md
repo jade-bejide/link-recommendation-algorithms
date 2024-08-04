@@ -32,6 +32,9 @@ The exact implementation of a '_Circle of Trust_' in Twitter's Who To Follow alg
 ## How To Use
 Run `python src/main.py`
 
+### Note
+
+
 ## References
 - Grover, A. and Leskovec, J., 2016, August. node2vec: Scalable feature learning for networks. In Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining (pp. 855-864).
 

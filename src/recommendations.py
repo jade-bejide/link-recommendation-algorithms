@@ -118,8 +118,8 @@ recommendation_algorithms = {
 }
 
 ra_enums = {
-    'ordinary': RA.ORDINARY,
-    'random': RA.RANDOM,
+    # 'ordinary': RA.ORDINARY,
+    # 'random': RA.RANDOM,
     'jaccard_coefficient': RA.JACCARD,
     'adamic_coefficient': RA.ADAMIC,
     'preferential_attachment': RA.PREFERENTIAL_ATTACHMENT,

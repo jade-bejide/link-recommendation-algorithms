@@ -2,6 +2,7 @@ import networkx as nx
 from recommendations import rewiring, ra_enums
 from init_graph import connected_erdos_renyi_graph
 from copy import deepcopy
+from time import time
 
 
 def simulate_recommendations(graph: nx.DiGraph) -> nx.DiGraph:
@@ -14,6 +15,8 @@ def simulate_recommendations(graph: nx.DiGraph) -> nx.DiGraph:
         final_graphs.append(graph_)
     return final_graphs
 
-GRAPH = connected_erdos_renyi_graph(1000)
+start = time()
+GRAPH = connected_erdos_renyi_graph(100)
 graph_configs = simulate_recommendations(GRAPH)
+print(f'Time Taken {time()-start}')
 

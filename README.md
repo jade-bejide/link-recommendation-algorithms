@@ -25,8 +25,8 @@ The exact implementation of a '_Circle of Trust_' in Twitter's Who To Follow alg
 - Common Neighbours
 - Two Hops
 - Common Followed
-- Homophilic Node2Vec
-- Structural Node2Vec
+- Homophilic Node2Vec (p > q)
+- Structural Node2Vec (p < q)
 - Twitter's Who To Follow Service
 
 ## How To Use

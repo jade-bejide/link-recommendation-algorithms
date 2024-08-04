@@ -3,7 +3,7 @@
 ## About
 This repository encapsulates part of my undergraduate dissertation: **Link Recommendation Algorithms Affect the Virality of Social Media Influencers**. It implements a range of _link_ recommendation algorithms (where recommendations are made based on the link structure of a directed social network graph). 
 
-Agents of the social network model are made recommendations in a random asynchronous order. During each recommendation round, an agent 'unfollows' its weakest connection with probability $1-d(i)$ and accepts each of its recommendations with probability $1/d(i)$. $d(i)$ is the number of outlinks for agent $i$. Justifications for these design choices are detailed within my undergraduate dissertation.
+Agents of the social network model are made recommendations in a random asynchronous order. During each recommendation round, an agent 'unfollows' its weakest connection with probability $1-d(i)$ and 'follows' each of its recommendations with probability $1/d(i)$. $d(i)$ is the number of outlinks for agent $i$. Justifications for these design choices are detailed within my undergraduate dissertation.
 
 To simulate each recommendation algorithm, a connected and weighted directed graph is required. Within my dissertation, I decided to use a minimally connected Erdos-Renyi graph as the initial topology of the social network however, any connected, weighted and directed graph can be used.
 
@@ -33,7 +33,7 @@ The exact implementation of a '_Circle of Trust_' in Twitter's Who To Follow alg
 Run `python src/main.py`
 
 ### Note
-
+Naturally, increasing the size of the social network quadratically (at worst) increases the number of recommendations. Within the dissertation, a 1000-node network was simulated however this was run on the University of Bristol's Blue Crystal 4 supercomputer. For demonstration purposes, this repository considers a 100-node network.
 
 ## References
 - Grover, A. and Leskovec, J., 2016, August. node2vec: Scalable feature learning for networks. In Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining (pp. 855-864).
